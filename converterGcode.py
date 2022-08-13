@@ -13,6 +13,7 @@ if(len( sys.argv) == 3):
     nome = sys.argv[2] + ".nc"
 
 open(nome, 'w').write(str)
+open(nome, 'a').write('\r\n')
 
 print("File completato.\nLinee: {}".format(linea))
        
